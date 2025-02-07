@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">MYPORTFOLIO</div>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#work">My Work</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+ <!-- Hero Section -->
+<div class="hero-container">
+  <h1 class="hero-title">SHAHD BEN HMIDA</h1>
+  <p class="hero-description">My approach to frontend engineering and technical writing is simple: create with purpose, empathy, and attention to detail.</p>
+</div>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="profile-container">
+      <div class="profile-pic">
+          <img src="me.jpg" alt="shahd">
+      </div>
+    </div>
+    <div class="about-content">
+      <p>Hello there, I'm Shahd Ben Hmida , web developer, and a second-year university student specializing in Software Development at ISET Sfax.<br> I'm passionate about crafting digital experiences that are both functional and accessible, aiming to build websites and applications that are visually engaging and user-friendly.
+
+        With experience in frontend development, I specialize in creating responsive and intuitive interfaces using ReactJS, NextJS, and TailwindCSS. I pay close attention to design details, ensuring smooth interactions and seamless navigation. I'm also committed to web accessibility, making sure that my projects are inclusive for all users.
+        
+        Beyond coding, I love sharing my knowledge with others. I write blog posts and articles about frontend development and web technologies, helping fellow developers explore new concepts and improve their skills. As a student, I'm constantly learning and growing, staying up to date with the latest trends in the tech industry.</p>
+    </div>
+  </section>
+  <section id="tools" class="tools">
+    <h2>Tools I Use</h2>
+    <div class="tools-buttons">
+      <button id="show-languages" class="active">Programming Languages</button>
+      <button id="show-frameworks">Frameworks</button>
+    </div>
+    <div class="tools-content">
+      <div id="languages-list" class="tools-list">
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div id="frameworks-list" class="tools-list hidden">
+        <ul>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Django</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="work" class="work">
+    <h2>My Work</h2>
+    <div class="work-grid">
+      <div class="work-card">
+        <h3>Project 1</h3>
+        <p>My Sushi Restaurant website allows users to book tables at the restaurant or place food delivery orders. It features an easy-to-use interface for reservations and online ordering, ensuring a seamless experience.</p>
+      </div>
+      <div class="work-card">
+        <h3>Project 2</h3>
+        <p>The Movie Reservation System using PHP allows users to book movie tickets online, browse movies, and select showtimes. It features an admin interface for managing movies and reservations, with a responsive front-end built using HTML, CSS, and JavaScript."</p>
+      </div>
+      <div class="work-card">
+        <h3>Project 3</h3>
+        <p>My To-Do List project, built with React, includes login and sign-up systems for user authentication. It allows users to create accounts, log in, and manage tasks by adding, editing, and deleting them.</p>
+      </div>
+      <div class="work-card">
+        <h3>Project 4</h3>
+        <p> My e-commerce project, developed with React, features a shopping cart, product listings, and secure checkout functionality. It provides a seamless shopping experience with user-friendly navigation and smooth interactions</p>
+      </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <h6> 🚀 Let's collaborate </h6> 
+  <div class="wave-group">
+      <input required type="text" class="input" id="name">
+      <span class="bar"></span>
+      <label class="label">
+          <span class="label-char" style="--index: 0">N</span>
+          <span class="label-char" style="--index: 1">a</span>
+          <span class="label-char" style="--index: 2">m</span>
+          <span class="label-char" style="--index: 3">e</span>
+      </label>
+  </div>
+  <div class="wave-group">
+      <input required type="email" class="input" id="email">
+      <span class="bar"></span>
+      <label class="label">
+          <span class="label-char" style="--index: 0">E</span>
+          <span class="label-char" style="--index: 1">M</span>
+          <span class="label-char" style="--index: 2">A</span>
+          <span class="label-char" style="--index: 3">I</span>
+          <span class="label-char" style="--index: 4">L</span>
+      </label>
+  </div>
+  <div class="wave-group">
+      <input required type="text" class="input" id="message">
+      <span class="bar"></span>
+      <label class="label">
+          <span class="label-char" style="--index: 0">M</span>
+          <span class="label-char" style="--index: 1">E</span>
+          <span class="label-char" style="--index: 2">S</span>
+          <span class="label-char" style="--index: 3">S</span>
+          <span class="label-char" style="--index: 4">A</span>
+          <span class="label-char" style="--index: 5">G</span>
+          <span class="label-char" style="--index: 6">E</span>
+      </label>
+  </div>
+  <button class="button" onclick="sendMessage()">SEND</button>
+  <p id="confirmation-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+      ✅ Your message has been sent!
+  </p>
+</section>
+
+<script>
+  function sendMessage() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let message = document.getElementById("message").value;
+      
+      if (name && email && message) {
+          document.getElementById("confirmation-message").style.display = "block";
+
+          // Optionally, clear the form fields
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+      } else {
+          alert("Please fill in all fields before sending.");
+      }
+  }
+</script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h1>SAY HELLO</h1>
+      <div class="social-links">
+        <a href="mailto:bentbenhmida@gmail.com" class="email-link">
+          <i class="fas fa-envelope"></i>Contact Me
+        </a>
+        <a href="www.linkedin.com/in/shahd-ben-hmida" target="_blank" class="linkedin-link">
+          <i class="fab fa-linkedin"></i>LinkedIn
+        </a>
+        <a href="https://wa.me/+2169285965" target="_blank" class="whatsapp-link">
+          <i class="fab fa-whatsapp"></i>WhatsApp
+        </a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Shahd Ben Hmida . All rights reserved.</p>
+  </footer>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
