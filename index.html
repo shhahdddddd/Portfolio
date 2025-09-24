@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
+  <div class="cursor"></div>
   <!-- Navbar -->
   <nav>
     <div class="logo">MYPORTFOLIO</div>
@@ -27,71 +31,73 @@ S
   <div class="hero-content">
       <div class="year-range">2025</div>
       <h1 class="name">SHAHD BEN HMIDA</h1>
-      <div class="portfolio-title">Creative Developer</div>
-      <div class="categories">Frontend Developer/Full stack/Software Development/Web Design</div>
-      <div class="specialization">Turning Ideas Into Digital Reality</div>
-      <div class="cta-button">View My Work</div>
+      <div class="portfolio-title">UX-Minded Developer</div>
+      <div class="categories">Crafting User-Centric Digital Experiences</div>
+      <div class="specialization">Turning Complex Problems into Simple, Beautiful, and Intuitive Designs.</div>
+      <a href="#work" class="cta-button">View My Work</a>
   </div>
 </div>
 
   <section id="about" class="about">
-    <h2>About Me</h2>
-    <div class="profile-container">
-      <div class="profile-pic">
-          <img src="me.jpg" alt="shahd">
-      </div>
+    <div class="about-left">
+      <h2>About Me</h2>
     </div>
-    <div class="about-content">
-      <p>Hello there, I'm Shahd Ben Hmida , web developer, and a second-year university student specializing in Software Development at ISET Sfax.<br> I'm passionate about crafting digital experiences that are both functional and accessible, aiming to build websites and applications that are visually engaging and user-friendly.
-
-        With experience in frontend development, I specialize in creating responsive and intuitive interfaces using ReactJS, NextJS, and TailwindCSS. I pay close attention to design details, ensuring smooth interactions and seamless navigation. I'm also committed to web accessibility, making sure that my projects are inclusive for all users.
-        
-        Beyond coding, I love sharing my knowledge with others. I write blog posts and articles about frontend development and web technologies, helping fellow developers explore new concepts and improve their skills. As a student, I'm constantly learning and growing, staying up to date with the latest trends in the tech industry.</p>
+    <div class="about-right">
+      <p>Hello! I'm Shahd Ben Hmida, a developer passionate about building intuitive and delightful digital experiences. I thrive on turning complex problems into simple, beautiful, and user-friendly solutions that bridge the gap between design and technology. With a focus on creating accessible and engaging interfaces, I'm excited to collaborate on projects that prioritize the user and push the boundaries of what's possible on the web.</p>
+      <div class="profile-pic">
+        <img src="me.jpg" alt="shahd">
+      </div>
     </div>
   </section>
   <section id="tools" class="tools">
     <h2>Tools I Use</h2>
-    <div class="tools-buttons">
-      <button id="show-languages" class="active">Programming Languages</button>
-      <button id="show-frameworks">Frameworks</button>
-    </div>
-    <div class="tools-content">
-      <div id="languages-list" class="tools-list">
-        <ul>
-          <li>Java</li>
-          <li>Python</li>
-          <li>C#</li>
-          <li>PHP</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-      <div id="frameworks-list" class="tools-list hidden">
-        <ul>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Django</li>
-        </ul>
-      </div>
+    <div class="tools-grid">
+      <div class="tool-card"><i class="devicon-java-plain"></i><p>Java</p></div>
+      <div class="tool-card"><i class="devicon-python-plain"></i><p>Python</p></div>
+      <div class="tool-card"><i class="devicon-csharp-plain"></i><p>C#</p></div>
+      <div class="tool-card"><i class="devicon-php-plain"></i><p>PHP</p></div>
+      <div class="tool-card"><i class="devicon-javascript-plain"></i><p>JavaScript</p></div>
+      <div class="tool-card"><i class="devicon-react-original"></i><p>React</p></div>
+      <div class="tool-card"><i class="devicon-nodejs-plain"></i><p>Node.js</p></div>
+      <div class="tool-card"><i class="devicon-django-plain"></i><p>Django</p></div>
+      <div class="tool-card"><i class="devicon-flutter-plain"></i><p>Flutter</p></div>
+      <div class="tool-card"><i class="devicon-androidstudio-plain"></i><p>Android Studio</p></div>
+      <div class="tool-card"><i class="fas fa-globe"></i><p>Web Development</p></div>
     </div>
   </section>
   <section id="work" class="work">
     <h2>My Work</h2>
-    <div class="work-grid">
-      <div class="work-card">
-        <h3>Project 1</h3>
-        <p>My Sushi Restaurant website allows users to book tables at the restaurant or place food delivery orders. It features an easy-to-use interface for reservations and online ordering, ensuring a seamless experience.</p>
+    <div class="work-gallery">
+      <div class="project-card">
+        <img src="project1.png" alt="Sushi Restaurant Website">
+        <div class="project-overlay">
+          <div class="project-tech">React, CSS</div>
+        </div>
       </div>
-      <div class="work-card">
-        <h3>Project 2</h3>
-        <p>The Movie Reservation System using PHP allows users to book movie tickets online, browse movies, and select showtimes. It features an admin interface for managing movies and reservations, with a responsive front-end built using HTML, CSS, and JavaScript."</p>
+      <div class="project-card">
+        <img src="project2.png" alt="Movie Reservation System">
+        <div class="project-overlay">
+          <div class="project-tech">PHP, JavaScript</div>
+        </div>
       </div>
-      <div class="work-card">
-        <h3>Project 3</h3>
-        <p>My To-Do List project, built with React, includes login and sign-up systems for user authentication. It allows users to create accounts, log in, and manage tasks by adding, editing, and deleting them.</p>
+      <div class="project-card">
+        <img src="image.png" alt="Wedding reservation">
+        <div class="project-overlay">
+          <div class="project-tech">HTML 5 ,PHP</div>
+          <a href="https://riyazeventmanagment.netlify.app/"></a>
+        </div>
       </div>
-      <div class="work-card">
-        <h3>Project 4</h3>
-        <p> My e-commerce project, developed with React, features a shopping cart, product listings, and secure checkout functionality. It provides a seamless shopping experience with user-friendly navigation and smooth interactions</p>
+      <div class="project-card">
+        <img src="project3.png" alt="React To-Do List">
+        <div class="project-overlay">
+          <div class="project-tech">React</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project4.png" alt="E-commerce Platform">
+        <div class="project-overlay">
+          <div class="project-tech">React</div>
+        </div>
       </div>
     </div>
 </section>
